@@ -1,0 +1,26 @@
+{
+  "name": "agendize-connect",
+  "version": "0.0.0",
+  "license": "MIT",
+  "angular-cli": {},
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "private": true,
+  "dependencies": {
+    "angular-chart.js": "^1.0.3",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "core-js": "^2.4.1",
+    "ejs": "*",
+    "express": "4.13.4",
+    "pg": "6.0.1",
+    "sequelize": "^3.27.0",
+    "winston": "^2.2.0"
+  },
+  "engines": {
+    "node": "^6.9.7",
+    "npm": "^3.0.0"
+  }
+}

@@ -1,0 +1,29 @@
+<header>
+	
+	<h1>Top 5 Websites Ranking</h1>
+
+</header>
+
+<md-content>
+</md-content>
+
+<div id="date">
+	<h2>Data on {{date | date : 'longDate'}}</h2>
+	<div id="vendasta-date-input">
+		<label>Select a date</label>
+		<md-datepicker ng-model="date" ng-change="onDateChanged()" md-placeholder="Enter date"  md-date-filter="onlySomeDatesPredicate"></md-datepicker>
+	</div>
+
+</div>
+
+<ul>
+	<li class="snapshot" ng-repeat="snapshot in ranking" ng-class="{first:$index == 0,second:$index == 1,third:$index == 2}">
+	<div>
+		<span class="snapshot-position">{{(1+$index)}}</span>
+		<span class="snapshot-hostname"> {{snapshot.website.hostname}} </span>
+	</div>
+	<span class="snapshot-visitors">{{snapshot.number_of_visites}} visitors</span>
+
+	</li>
+
+</ul>
