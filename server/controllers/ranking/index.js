@@ -31,7 +31,7 @@ module.exports.getTop5 = function(req,res,next){
 		// if there is date information in request query, we answer this date ranking after verifying that a report is available on that date
 		if(req.query.date){
 
-			if(allowedDates.indexOf(req.query.date.toJSON()) < 0){
+			if(allowedDates.indexOf(new Date(req.query.date).toJSON()) < 0){
 				
 				date = req.query.date
 
