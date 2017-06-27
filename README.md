@@ -8,3 +8,5 @@ To use the application you must setup a localhost database under the user 'postg
 
 do a npm start to start the app. Then the webapp is available at the root. 
 
+Locally the app will run on port 5000.
+
