@@ -15,7 +15,6 @@ angular.module('rankingModule').component('rankingComponent', {
 				method: 'GET',
 				url: '/api/top5'
 			}).then(function successCallback(response) {
-				console.log(response)
 				$scope.ranking = response.data.ranking;
 				$scope.allowedDates = response.data.allowedDates
 				$scope.date = new Date($scope.ranking[0].date);

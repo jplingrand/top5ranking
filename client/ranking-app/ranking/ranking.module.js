@@ -1,3 +1,3 @@
 'use strict'
 
-angular.module('rankingModule',[]);
+angular.module('rankingModule',['chart.js']);

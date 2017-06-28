@@ -1,38 +1,37 @@
 <html>
 
 <head>
-	<title>Top 5 Ranking</title>
+	<title>Top 5 Websites Ranking</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>  
-
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
-
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+
 	<script src="../../public/node_modules/chart.js/dist/Chart.min.js"></script>
 	<script src="../../public/node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
 
 	<script src="./client/ranking-app/index.js"></script>
 	<script src="./client/ranking-app/ranking/ranking.module.js"></script>
 	<script src="./client/ranking-app/ranking/ranking.component.js"></script>
-
-	<link rel="stylesheet" type="text/css" href="./client/ranking-app/styles/ranking.css">
+	<script src="./client/ranking-app/ranking-bar-chart/ranking-bar-chart.component.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.0/angular-material.css">
-
-	<link rel="shortcut icon" href="../../public/images/favicon.png">
-
+	<link rel="stylesheet" type="text/css" href="./client/ranking-app/styles/ranking.css">
 </head>
 
 	<body ng-app="mainApp" ng-cloak>
-
-		<ranking-component></ranking-component>			
-
+	
+	<header>
+		<h1>Top 5 Websites Ranking</h1>
+	</header>
+	<ranking-component></ranking-component>
 	</body>
 </html>
 

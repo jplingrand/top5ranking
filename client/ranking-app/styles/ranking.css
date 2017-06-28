@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
 body{
 	font-family: Roboto;
 }
@@ -15,7 +20,8 @@ h2{
 }
 
 header{
-	padding: 20px;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+	padding: 40px;
 	text-transform: uppercase;
 	text-align: center;
 	background: #f54ea2; /* Old browsers */
@@ -60,7 +66,12 @@ ul{
 }
 
 #date{
+	padding-top: 20px;
+	padding-bottom: 20px;
 	text-align: center;
+   	 background-color: rgba(171, 168, 168, 0.08);;
+   	 /*border-bottom: 1px solid hsla(0, 100%, 49%, 0.17);*/
+
 }
 
 .first{
@@ -106,4 +117,10 @@ ul{
 	.snapshot div{
 		width: 100%;
 	}
+}
+
+#bar{
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
 }
